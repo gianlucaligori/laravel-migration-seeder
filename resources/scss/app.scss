@@ -1,11 +1,41 @@
 @import "~bootstrap/scss/bootstrap";
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    background-image: url("../img/picsum16.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-color: black;
+
 }
 
 h1 {
-    color: red;
+    color: white;
+    margin-bottom: 2rem;
 }
+
+.table-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+
+ table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 1.1rem;
+        color: orange;
+    }
+
+    th {
+        font-size: 1.4rem;
+    }
+
+    td {
+                border: 1px solid orange;
+
+    }
