@@ -27,7 +27,7 @@ h1 {
 
     th,
     td {
-        padding: 1.1rem;
+        padding: .7rem;
         color: orange;
     }
 
@@ -36,6 +36,7 @@ h1 {
     }
 
     td {
-                border: 1px solid orange;
+                border: 1px orange;
+                border-style: dotted;
 
     }

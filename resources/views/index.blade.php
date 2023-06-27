@@ -9,26 +9,32 @@
 </head>
 
 <body>
-    <h1 class="text-center">Stazione dei viaggi nel tempo Boolean</h1>
+    <h1 class="text-center">Stazione dei viaggi nel tempo e nello spazio Boolean</h1>
     <div class="table-container">
         <table>
             <thead>
                 <tr>
                     <th>Treno:</th>
+                    <th>Codice:</th>
                     <th>In partenza da:</th>
                     <th>Del giorno (partenza):</th>
                     <th>In arrivo a:</th>
                     <th>Del giorno (arrivo):</th>
+                    <th>Stato:</th>
+
+
                 </tr>
             </thead>
             <tbody>
                 @foreach ($trains as $train)
                     <tr>
                         <td>{{ $train->company }}</td>
+                        <td>{{ $train->train_code }}</td>
                         <td>{{ $train->departure_station }}</td>
                         <td>{{ $train->departure_date }}</td>
                         <td>{{ $train->arrival_station }}</td>
                         <td>{{ $train->arrival_date }}</td>
+                        <td>{{ $train->delete ? 'Cancellato' : 'In corso' }}</td>
                     </tr>
                 @endforeach
             </tbody>

@@ -29,7 +29,7 @@ class TrainsTableSeeder extends Seeder
                     'train_code' => rand(25, 300),
                     'number_of_carriages' => rand(1, 25),
                     'in_time' => $faker->boolean(),
-                    'delete' => $faker->boolean(['Yes', 'No']),
+                    'delete' => $faker->boolean(),
             ]);
         }
     }
