@@ -20,19 +20,20 @@ class TrainsTableSeeder extends Seeder
             Train::create([
 
                     'company' => $faker->company(),
-                    'departure_station' => $faker->address(),
+                    'departure_station' => $faker->city(),
                     'arrival_station' =>  $faker->city(),
                     'departure_time' => $faker->time(),
-                    'arrival_time' => $faker->time(),
                     'departure_date' => $faker->date(),
+                    'arrival_time' => $faker->time(),
                     'arrival_date' => $faker->date(),
                     'train_code' => rand(25, 300),
-                    'carriages_number' => rand(1, 25),
-                    'on_time' => rand(1, 4),
-                    'type' => $faker->randomElement('villa'),
-                    'canceled' => $faker->paragraphs(rand(2, 6), true),
-                    'price' => rand(10000, 25000),
+                    'number_of_carriages' => rand(1, 25),
+                    'in_time' => $faker->boolean(),
+                    'delete' => $faker->boolean(),
             ]);
         }
     }
 }
+
+
+
