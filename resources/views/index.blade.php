@@ -21,8 +21,6 @@
                     <th>In arrivo a:</th>
                     <th>Del giorno (arrivo):</th>
                     <th>Stato:</th>
-
-
                 </tr>
             </thead>
             <tbody>
